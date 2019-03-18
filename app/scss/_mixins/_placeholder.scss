@@ -1,0 +1,45 @@
+@mixin place($color, $weight, $size) {
+  &::-webkit-input-placeholder { 
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+  }
+  &::-moz-placeholder { 
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+  }
+  &:-moz-placeholder { 
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+  }
+  &:-ms-input-placeholder { 
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+  }
+  &::placeholder { 
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+  }
+}
+
+@mixin placeOnFocus($opacity) {
+  &::-webkit-input-placeholder { 
+    opacity: $opacity;
+  }
+  &::-moz-placeholder { 
+    opacity: $opacity;
+  }
+  &:-moz-placeholder { 
+    opacity: $opacity;
+  }
+  &:-ms-input-placeholder { 
+    opacity: $opacity;
+  }
+  &::placeholder { 
+    opacity: $opacity;
+  }
+}

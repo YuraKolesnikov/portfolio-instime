@@ -1,0 +1,19 @@
+@mixin centerElementFlex() { 
+  justify-content: center;
+  align-items: center; 
+}
+
+@mixin spaceBetweenFlex() {
+  justify-content: space-between;
+  align-items: center; 
+}
+
+@mixin spaceAroundFlex() {
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin centerContainer() {
+  margin-left: auto;
+  margin-right: auto;
+}
