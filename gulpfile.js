@@ -42,13 +42,13 @@ gulp.task('js', ['common-js'], function () {
     'app/js/common.min.js', // Всегда в конце
   ])
     .pipe(concat('scripts.min.js'))
-    // .pipe(uglify()) // Минимизировать весь js (на выбор)
+    .pipe(uglify()) // Минимизировать весь js (на выбор)
     .pipe(gulp.dest('app/js'))
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('sass', function () {
-  return gulp.src('app/sass/**/*.scss')
+gulp.task('scss', function () {
+  return gulp.src('app/scss/**/*.scss')
     .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
     .pipe(rename({ suffix: '.min', prefix: '' }))
     .pipe(autoprefixer(['last 15 versions']))
@@ -57,8 +57,8 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream())
 });
 
-gulp.task('watch', ['sass', 'js', 'browser-sync'], function () {
-  gulp.watch('app/sass/**/*.scss', ['sass']);
+gulp.task('watch', ['scss', 'js', 'browser-sync'], function () {
+  gulp.watch('app/scss/**/*.scss', ['scss']);
   gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
   gulp.watch('app/*.html', browserSync.reload);
 });
@@ -69,7 +69,7 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function () {
+gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function () {
 
   var buildFiles = gulp.src([
     'app/*.html',
