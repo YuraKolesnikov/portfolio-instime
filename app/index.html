@@ -20,7 +20,51 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+  <!-- Navbar -->
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        JoGeek
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a href="//github.io/jo_geek" target="_blank">Github</a>
+      <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+      <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
+    </div>
+  </div>
+  <!-- Modal window -->
+  <div class="wrapper">
+    <h1>Simple jQuery Modal</h1>
+    <button class="modal-toggle">Show modal</button>
+  </div>
+  
+  <div class="modal">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+      <div class="modal-header">
+        <button class="modal-close modal-toggle"><svg class="icon-close icon" viewBox="0 0 32 32"><use xlink:href="#icon-close"></use></svg></button>
+        <h2 class="modal-heading">This is a modal</h2>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eum delectus, libero, accusantium dolores inventore obcaecati placeat cum sapiente vel laboriosam similique totam id ducimus aperiam, ratione fuga blanditiis maiores.</p>
+          <button class="modal-toggle">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/scripts.min.js"></script>
 </body>
 </html>
