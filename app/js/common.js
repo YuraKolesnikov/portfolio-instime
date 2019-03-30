@@ -1,8 +1,10 @@
 $(function() {
-
+  /* Modal window */
 	$('.modal-toggle').on('click', function(e) {
-  e.preventDefault();
-  $('.modal').toggleClass('is-visible');
-});
+    e.preventDefault();
+    console.log($(this).siblings()[0])
+    $('.modal').toggleClass('is-visible');
+  });
 
+  
 });

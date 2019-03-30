@@ -21,35 +21,42 @@
 </head>
 <body>
   <!-- Navbar -->
-  <div class="nav">
-    <div class="nav-header">
-      <div class="nav-title">
-        JoGeek
+  <div class="navbar-dark px-md-3">
+      <div class="navbar__header">
+        <div class="navbar__brand">
+          JoGeek
+        </div>
+      </div>
+      <div class="navbar__toggle-icon">
+        <label for="navbar__toggle" class="navbar__toggle-label">
+          <span class="navbar__span"></span>
+          <span class="navbar__span"></span>
+          <span class="navbar__span"></span>
+        </label>
+      </div>
+      <input type="checkbox" id="navbar__toggle" class="navbar__toggle">
+      <div class="navbar__menu navbar__menu--vertical">
+        <a class="navbar__link js-dropown-trigger" href="//github.io/jo_geek" target="_blank">
+          Github
+          <div class="dropdown">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, impedit?
+          </div>
+        </a>
+        <a class="navbar__link" href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+        <a class="navbar__link" href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+        <a class="navbar__link" href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+        <a class="navbar__link" href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
       </div>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    <input type="checkbox" id="nav-check">
-    <div class="nav-links">
-      <a href="//github.io/jo_geek" target="_blank">Github</a>
-      <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
-      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
-      <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
-    </div>
-  </div>
+  <!-- TODO: Переделать классы, сделать modal-toggle и modal-close кнопки + клик по overlay -->
   <!-- Modal window -->
-  <div class="wrapper">
+  <!-- <div class="wrapper mx-auto">
     <h1>Simple jQuery Modal</h1>
-    <button class="modal-toggle">Show modal</button>
+    <button class="modal-toggle" data-target="testModal">Show modal</button>
   </div>
   
-  <div class="modal">
+  <div class="modal" id="testModal">
+      <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768" height="800" viewBox="0 0 768 800"><defs><g id="icon-close"><path class="path1" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path></g></defs></svg>
     <div class="modal-overlay modal-toggle"></div>
     <div class="modal-wrapper modal-transition">
       <div class="modal-header">
@@ -64,7 +71,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <script src="js/scripts.min.js"></script>
 </body>
 </html>
