@@ -14,12 +14,7 @@
 /**
  * Modals ($modals)
  */
-
-.wrapper {
-  width: 50%;
-  text-align: center;
-}
-.modal {
+.modal__window {
     position: absolute;
     z-index: 10000; /* 1 */
     top: 0;
@@ -29,11 +24,11 @@
     height: 100%;
 }
 
-.modal.is-visible {
+.modal__window.is-visible {
     visibility: visible;
 }
 
-.modal-overlay {
+.modal__overlay {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -46,13 +41,13 @@
   transition: visibility 0s linear 0.3s, opacity 0.3s;
 }
 
-.modal.is-visible .modal-overlay {
+.modal__window.is-visible .modal__overlay {
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
 }
 
-.modal-wrapper {
+.modal__wrapper {
   position: absolute;
   z-index: 9999;
   top: 6em;
@@ -61,32 +56,29 @@
   margin-left: -16em;
   background-color: #fff;
   box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
-}
-
-.modal-transition {
   transition: all 0.3s 0.12s;
   transform: translateY(-10%);
   opacity: 0;
 }
 
-.modal.is-visible .modal-transition {
+.modal__window.is-visible .modal__wrapper {
   transform: translateY(0);
   opacity: 1;
 }
 
-.modal-header,
-.modal-content {
+.modal__header,
+.modal__content {
   padding: 1em;
 }
 
-.modal-header {
+.modal__header {
   position: relative;
   background-color: #fff;
   box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
   border-bottom: 1px solid #e8e8e8;
 }
 
-.modal-close {
+.modal__close-button{
   position: absolute;
   top: 0;
   right: 0;
@@ -96,21 +88,21 @@
   border: 0;
 }
 
-.modal-close:hover {
+.modal__close-button:hover {
   color: #777;
 }
 
-.modal-heading {
+.modal__title {
   font-size: 1.125em;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.modal-content > *:first-child {
+.modal__content > *:first-child {
   margin-top: 0;
 }
 
-.modal-content > *:last-child {
+.modal__content > *:last-child {
   margin-bottom: 0;
 }

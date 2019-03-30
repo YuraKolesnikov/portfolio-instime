@@ -1,10 +1,13 @@
 $(function() {
   /* Modal window */
-	$('.modal-toggle').on('click', function(e) {
-    e.preventDefault();
-    console.log($(this).siblings()[0])
-    $('.modal').toggleClass('is-visible');
+	$('.js-modal-trigger').on('click', function(e) {
+    $(this).siblings('.modal__window').addClass('is-visible')
   });
 
-  
+  $('.js-modal-close').on('click', function(e) {
+    $('.modal__window').removeClass('is-visible')
+  });
 });
+
+
+/* $('.modal__window').removeClass('is-visible'); */
