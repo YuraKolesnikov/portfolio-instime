@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>Title</title>
-  <meta name="description" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#000">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#000">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <div class="navbar px-md-3">
+  <head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta property="og:image" content="path/to/image.jpg" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-touch-icon-114x114.png"
+    />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar px-md-3">
       <div class="navbar__header">
         <div class="navbar__brand">
           JoGeek
@@ -34,41 +49,125 @@
           <span class="navbar__span"></span>
         </label>
       </div>
-      <input type="checkbox" id="navbar__toggle" class="navbar__toggle">
+      <input type="checkbox" id="navbar__toggle" class="navbar__toggle" />
       <div class="navbar__menu navbar__menu--vertical">
-        <a class="navbar__link js-dropown-trigger" href="//github.io/jo_geek" target="_blank">
+        <a
+          class="navbar__link js-dropown-trigger"
+          href="//github.io/jo_geek"
+          target="_blank"
+        >
           Github
           <div class="dropdown">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, impedit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem, impedit?
           </div>
         </a>
-        <a class="navbar__link" href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
-        <a class="navbar__link" href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
-        <a class="navbar__link" href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-        <a class="navbar__link" href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
+        <a
+          class="navbar__link"
+          href="http://stackoverflow.com/users/4084003/"
+          target="_blank"
+          >Stackoverflow</a
+        >
+        <a
+          class="navbar__link"
+          href="https://in.linkedin.com/in/jonesvinothjoseph"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a
+          class="navbar__link"
+          href="https://codepen.io/jo_Geek/"
+          target="_blank"
+          >Codepen</a
+        >
+        <a
+          class="navbar__link"
+          href="https://jsfiddle.net/user/jo_Geek/"
+          target="_blank"
+          >JsFiddle</a
+        >
       </div>
     </div>
-  <!-- Modal window -->
-  <div class="mx-auto" style="width: 50%;">
-    <h1>Simple jQuery Modal</h1>
-    <button class="js-modal-trigger" data-target="testModal">Modal trigger</button>
-    <div class="modal__window" id="testModal">
-      <div class="modal__overlay js-modal-close" data-target="testModal"></div>
-      <div class="modal__wrapper modal-transition">
-        <div class="modal__header">
-          <button class="js-modal-close modal__close-button" data-target="testModal">&times;</button>
-          <h2 class="modal__title">This is a modal</h2>
-        </div>
-        <div class="modal__body">
-          <div class="modal__content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eum delectus, libero, accusantium dolores inventore obcaecati placeat cum sapiente vel laboriosam similique totam id ducimus aperiam, ratione fuga blanditiis maiores.</p>
-            <button class="js-modal-close" data-target="testModal">Update</button>
+    <!-- Modal window -->
+    <div class="mx-auto" style="width: 50%;">
+      <h1>Simple jQuery Modal</h1>
+      <button class="js-modal-trigger" data-target="testModal">
+        Modal trigger
+      </button>
+      <div class="modal__window" id="testModal">
+        <div
+          class="modal__overlay js-modal-close"
+          data-target="testModal"
+        ></div>
+        <div class="modal__wrapper modal-transition">
+          <div class="modal__header">
+            <button
+              class="js-modal-close modal__close-button"
+              data-target="testModal"
+            >
+              &times;
+            </button>
+            <h2 class="modal__title">This is a modal</h2>
+          </div>
+          <div class="modal__body">
+            <div class="modal__content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit eum delectus, libero, accusantium dolores inventore
+                obcaecati placeat cum sapiente vel laboriosam similique totam id
+                ducimus aperiam, ratione fuga blanditiis maiores.
+              </p>
+              <button class="js-modal-close" data-target="testModal">
+                Update
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <script src="js/scripts.min.js"></script>
-</body>
+    <div class="card">
+      <h1>Card title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugit!
+      </p>
+      <div class="card-footer">
+        <div class="mx-auto" style="width: 50%;">
+          <button class="js-modal-trigger" data-target="testModal">
+            Learn more
+          </button>
+          <div class="modal__window" id="testModal">
+            <div
+              class="modal__overlay js-modal-close"
+              data-target="testModal"
+            ></div>
+            <div class="modal__wrapper modal-transition">
+              <div class="modal__header">
+                <button
+                  class="js-modal-close modal__close-button"
+                  data-target="testModal"
+                >
+                  &times;
+                </button>
+                <h2 class="modal__title">This is a modal</h2>
+              </div>
+              <div class="modal__body">
+                <div class="modal__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Impedit eum delectus, libero, accusantium dolores inventore
+                    obcaecati placeat cum sapiente vel laboriosam similique
+                    totam id ducimus aperiam, ratione fuga blanditiis maiores.
+                  </p>
+                  <button class="js-modal-close" data-target="testModal">
+                    Update
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.min.js"></script>
+  </body>
 </html>
