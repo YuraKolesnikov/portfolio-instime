@@ -17,7 +17,7 @@
     display: inline;
     float: right;
     font-size: 18px;
-    transition: all 0.3s ease;
+    @include transition();
   }
 
   &__header { display: inline; }
@@ -51,11 +51,11 @@
       top: 0px;
     }
 
-    &:not(:checked) + .navbar__menu--horizontal { width: 0px; }
+    &:not(:checked) + .navbar__menu--horizontal { left: 100%; }
     &:not(:checked) + .navbar__menu--vertical { height: 0px; }
     &:checked + .navbar__menu--horizontal {
       /* Horizontal navbar */
-      width: 100%;
+      left: 0;
       /* Vertical navbar */
       
       overflow-y: auto;
@@ -74,8 +74,9 @@
     width: 25px;
     border: 2px solid #4d4d4d;
     border-radius: 5px;
-    transition: transform .5s ease, opacity .35s ease;
+    
     transform-origin: center;
+    @include transition();
     &.top { top: 16px; left: 11px; }
     &.middle { top: 23px; left: 11px; }
     &.bottom { top: 30px; left: 11px; }
@@ -109,7 +110,7 @@
     left: 0px;
 
     &--horizontal {
-      width: 0px;
+      width: 100%;
     }
     &--vertical {
       width: 100%;
