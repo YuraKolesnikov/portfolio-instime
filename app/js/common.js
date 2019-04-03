@@ -7,6 +7,11 @@ $(function() {
   $('.js-modal-close').on('click', function(e) {
     $('.modal__window').removeClass('is-visible')
   });
+
+  /* Hamburger animation */
+  $('.js-hamburger').on('click', function(e) {
+    $('.navbar__toggle-icon').toggleClass('active')
+  })
 });
 
 
