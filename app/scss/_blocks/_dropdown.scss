@@ -1,0 +1,29 @@
+.dropdown {
+  position: absolute;
+  transition: box-shadow .35s ease;
+  box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0);
+  &__hover-trigger {
+    &:hover {
+      .dropdown { 
+        box-shadow: 0 0 4px 3px rgba(0, 0, 0, .15);
+        transition: box-shadow .35s ease;
+      }
+      .dropdown--opacity { opacity: 1; }
+      .dropdown--width { width: 100px; }
+    }
+  }
+
+  &--opacity {
+    /* Ширину настраивать самому, в зависимости от контента */
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+
+  &--width {
+    /* Ширину настраивать самому, в зависимости от контента */
+    width: 0;
+    background: #bbb;
+    overflow: hidden;
+    transition: width .15s ease;
+  }
+}
