@@ -12,6 +12,12 @@ $(function() {
   $('.js-hamburger').on('click', function(e) {
     $('.navbar__toggle-icon').toggleClass('active')
   })
+
+  /* Dropdown animation */
+  /* Hover */
+  $('.js-dropdown__click-trigger').on('click', function(e) {
+    $(this).find('.dropdown').toggleClass('active')
+  })
 });
 
 
