@@ -21,7 +21,6 @@
   }
 
   &__header { display: inline; }
-
   &__brand {
     display: inline-block;
     font-size: 22px;
@@ -30,7 +29,6 @@
   }
   &__toggle {
     display: none;
-
     &-label {
       display: inline-block;
       cursor: pointer;
@@ -40,7 +38,6 @@
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.1);
-        //background-color: rgba(0, 0, 0, 0.3);
       }
     }
 
@@ -51,20 +48,20 @@
       top: 0px;
     }
 
-    &:not(:checked) + .navbar__menu--horizontal { left: 100%; }
-    &:not(:checked) + .navbar__menu--vertical { height: 0px; }
+    &:not(:checked) + .navbar__menu--horizontal { 
+      left: 100%;
+    }
+    &:not(:checked) + .navbar__menu--vertical { 
+      height: 0px;
+   }
     &:checked + .navbar__menu--horizontal {
-      /* Horizontal navbar */
       left: 0;
-      /* Vertical navbar */
-      
       overflow-y: auto;
     }
     &:checked + .navbar__menu--vertical {
       height: 270px;
       overflow-y: auto;
     }
-    
   }
 
   

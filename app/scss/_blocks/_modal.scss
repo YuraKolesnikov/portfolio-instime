@@ -52,9 +52,8 @@
   margin: -16em;
   background-color: #fff;
   box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
-  transition: all 0.3s 0.12s;
   opacity: 0;
-
+  @include transition(all, .3s);
   /* @media (max-width: 600px) {
     & {
       width: 24em !important;

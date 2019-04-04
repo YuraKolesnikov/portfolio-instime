@@ -1,15 +1,15 @@
 .dropdown {
   position: absolute;
-  transition: box-shadow .35s ease;
   box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0); 
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 3px;
   padding: 8px 0;
+  @include borderRadius(3px);
+  @include transition(box-shadow, 35s);
   &__hover-trigger {
     &:hover {
       .dropdown { 
         box-shadow: 0 0 4px 3px rgba(0, 0, 0, .15);
-        transition: box-shadow .35s ease;
+        @include transition(box-shadow, .35s);
       }
       .dropdown--opacity { opacity: 1; }
       .dropdown--width { width: 100px; }
@@ -19,7 +19,7 @@
   &--opacity {
     /* Ширину настраивать самому, в зависимости от контента */
     opacity: 0;
-    transition: opacity .35s ease;
+    @include transition(opacity, .35s);
     /* Для кликер-дропдаунов */
     &.active {
       opacity: 1 !important;
@@ -32,6 +32,7 @@
     width: 0;
     background: #bbb;
     overflow: hidden;
+    @include transition(width, .15s);
     transition: width .15s ease;
   }
 }
