@@ -3,7 +3,9 @@
 @import "_mixins/mixins";
 @import "fonts";
 @import "_utilities/utilities";
-
+body {
+  font-size: 1em;
+}
 .card {
   width: 300px;
   margin: auto;
@@ -21,3 +23,4 @@
 @import "_blocks/navbar";
 @import "_blocks/modal";
 @import "_blocks/dropdown";
+@import "_blocks/grid";
