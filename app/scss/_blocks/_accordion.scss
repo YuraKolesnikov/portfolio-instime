@@ -1,0 +1,41 @@
+.accordion {
+  position: relative;
+  height: auto;
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+  }
+
+  &__toggle {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+    &.active {
+      background-color:#3399cc;
+      color: #fff;
+    }
+
+    &-icon {
+      float: right;
+      margin-top: 4px;
+    }
+  }
+
+  &__body {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+    margin: 0;
+    color: #333;
+    display: none;
+  }
+}
