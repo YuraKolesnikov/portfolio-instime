@@ -1,4 +1,17 @@
 $(function() {
+  /* Sliders */
+  $('.main-carousel').flickity({
+    initialIndex: 0,
+    prevNextButtons: true,
+    pageDots: true,
+    freeScroll: false,
+    wrapAround: true,
+    autoPlay: 5000,
+    selectedAttraction: 0.05,
+    friction: 0.67
+  });
+
+
   /* Modal window */
 	$('.js-modal-trigger').on('click', function(e) {
     $(this).siblings('.modal__window').addClass('is-visible')

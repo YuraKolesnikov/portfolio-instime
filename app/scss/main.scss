@@ -2,13 +2,12 @@
 @import "_utilities/reboot";
 @import "_mixins/mixins";
 @import "fonts";
+@import "libs";
 @import "_utilities/utilities";
-body {
-  font-size: 1em;
-}
 
 @import "_blocks/accordion";
 @import "_blocks/dropdown";
 @import "_blocks/grid";
 @import "_blocks/modal";
 @import "_blocks/navbar";
+@import "_blocks/slider";

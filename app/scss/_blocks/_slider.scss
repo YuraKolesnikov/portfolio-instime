@@ -1,0 +1,120 @@
+.flickity-enabled { margin-top: 70px; }
+.flickity-viewport { height: 600px; }
+.carousel-cell {
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    padding-left: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    opacity: .5;
+    transition: opacity .7s ease;
+    background-image: url('https://source.unsplash.com/random/1200x700');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &.is-selected {
+      opacity: 1;
+      transition: opacity .6s ease;
+    }
+
+    &__header {
+      text-align: left;
+      width: 300px;
+      padding: 0px;
+      margin: 0;
+      font-size: 3em;
+      line-height: 1.5;
+      letter-spacing: 2.1px;
+      color: black;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all .8s ease;
+    }
+
+    &__button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.25em;
+      border: 3px solid transparent;
+      &:hover {
+        border: 3px solid #FFC402;
+        color: #FFC402;
+      }
+    }
+}
+.fa-angle-right {
+	position: relative;
+	left: 16px;
+  transition: left .35s ease;
+}
+
+.flickity-button {
+  background-color: transparent !important;
+  opacity: .5;
+  transition: opacity .5s ease;
+  &:hover {
+    opacity: 1;
+  }
+  &:disabled {
+    display: none !important;
+  }
+}
+
+.flickity-prev-next-button {
+  width: 80px !important;
+  height: 80px !important;
+  font-weight: 200;
+}
+
+.flickity-button-icon {
+  fill: white !important;
+}
+.flickity-page-dots {
+  bottom: 30px !important;
+  .dot {
+    
+    &.is-selected {
+      background: #fff !important;
+    }}
+}
+/* Media */
+@media screen and (min-width: 1600px) {
+  .flickity-viewport { height: 700px; }
+  .carousel-cell { height: 700px; }
+}
+@media only screen and (max-width: 768px) {
+  .flickity-prev-next-button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .carousel-cell {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    &__header {
+      font-size: 2em;
+      text-align: center;
+    }
+    .slider-button {
+      font-size: 1em;
+      justify-self: center;
+    }
+  }
+}
+        
+@media only screen and (max-width: 480px) {
+  .flickity-viewport {
+    width: 100vw;
+    height: 350px;
+    .carousel-cell {
+      height: 350px;
+      background-size: cover;
+      background-position: stretch;
+      }
+    }
+  }
