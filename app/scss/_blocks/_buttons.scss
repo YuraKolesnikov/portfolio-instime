@@ -1,0 +1,143 @@
+.button {
+  padding: 0 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  user-select: none;
+  color: #FFF;
+  outline: none;
+  border: 0;
+  letter-spacing: 0.05em;
+
+  /* Пересмотреть, действительно ли так */
+  transition: all .35s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--large {
+    width: 220px;
+    height: 60px;
+  }
+
+  &--medium {
+    width: 220px;
+    height: 49px;
+  }
+
+  &--small {
+    width: 150px;
+    height: 40px;
+  }
+
+  &--x-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-height: 60%;
+      max-width: 60%;
+    }
+  }
+
+  /* Button with icon */
+  &--with-icon {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    letter-spacing: initial;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgba(255, 255, 255, .1);
+    & svg {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      max-height: 60%;
+      max-width: 60%;
+    }
+  }
+
+  &__text {
+    width: calc(100% - 60px);
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+    & .bold {
+      font-size: 20px;
+    }
+  }
+
+  /* Colors */
+  &--magento {
+    background-color: $magento;
+    box-shadow: $box-shadow-magento;
+
+    &:hover {
+      background-color: lighten($magento, 5%);
+    }
+
+    &:active {
+      box-shadow: none;
+      background-color: $magento;
+    }
+  }
+
+  &--orange {
+    background-color: $orange;
+    border: 0;
+    box-shadow: $box-shadow-orange;
+
+    &:hover {
+      background-color: lighten($orange, 5%);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &--magento-violet {
+    background: $gradient-magento-violet;
+    background-size: 100%;
+
+    &:hover {
+      background-size: 600%;
+      background-position: 0%;
+      box-shadow: $box-shadow-violet;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &--yellow-magento {
+    background: $gradient-yellow-magento-1;
+    background-size: 100%;
+    &:hover {
+      background-size: 600%;
+      background-position: 0%;
+      box-shadow: $box-shadow-violet;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}

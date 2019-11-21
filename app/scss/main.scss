@@ -6,6 +6,7 @@
 @import "_utilities/utilities";
 
 @import "_blocks/grid";
+@import "_blocks/buttons";
 @import "_blocks/navbar";
 
 .test {
@@ -19,4 +20,8 @@
   width: 25px;
   height: 25px;
   & svg { height: 100%; width: 100%; }
+}
+
+.bold {
+  font-weight: bold;
 }
