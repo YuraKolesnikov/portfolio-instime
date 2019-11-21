@@ -2,6 +2,7 @@ var gulp = require('gulp'),
   gutil = require('gulp-util'),
   sass = require('gulp-sass'),
   browserSync = require('browser-sync'),
+  svgSprite = require('gulp-svg-sprite')
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   cleanCSS = require('gulp-clean-css'),

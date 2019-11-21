@@ -7,3 +7,16 @@
 
 @import "_blocks/grid";
 @import "_blocks/navbar";
+
+.test {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  box-shadow: $box-shadow-gray;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  & svg { height: 100%; width: 100%; }
+}

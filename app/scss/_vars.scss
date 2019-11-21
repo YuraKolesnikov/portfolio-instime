@@ -1,0 +1,29 @@
+/* 1. Colors */
+$yellow:        #FFDE00;
+$dark-yellow:   #F6BB16;
+$orange:        #F18B17;
+$dark-orange:   #F56F3F;
+
+$pink:          #D41F8B;
+$blue:          #5749DC;
+$magento:       #E73563;
+
+$violet:        #9F24BE;
+$light-violet:  #AE20B7;
+$dark-violet:   #8B33BC;
+$darker-violet: #8B31C4;
+
+$black:         #262A2C;
+$gray:          #859098;
+$light-gray:    #FAFAFD;
+
+/* 2. Gradients */
+$gradient-magento-violet: linear-gradient(270deg, $magento -10.91%, $darker-violet 100%);
+$gradient-yellow-magento-1: linear-gradient(270deg, $yellow -10.91%, $magento 100%);
+$gradient-yellow-magento-2: linear-gradient(232.82deg, $yellow -12.36%, $magento 93.66%);
+$gradient-pink-violet-blue: linear-gradient(238.09deg, $pink -7.95%, $violet 47.87%, $blue 99.65%);
+
+/* 3. Box-shadows */
+$box-shadow-gray: -4px 4px 20px rgba($gray, 0.2);
+$box-shadow-violet: 0px 2px 4px rgba($violet, 0.4);
+$box-shadow-magento: 0px 2px 4px rgba($magento, 0.4);
