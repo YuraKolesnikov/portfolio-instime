@@ -115,7 +115,7 @@
   &--magento-violet {
     background: $gradient-magento-violet;
     background-size: 100%;
-
+    background-position: 0%;
     &:hover {
       background-size: 600%;
       background-position: 0%;
@@ -130,6 +130,7 @@
   &--yellow-magento {
     background: $gradient-yellow-magento-1;
     background-size: 100%;
+    background-position: 0%;
     &:hover {
       background-size: 600%;
       background-position: 0%;
