@@ -24,6 +24,7 @@ $gradient-yellow-magento-2: linear-gradient(232.82deg, $yellow -12.36%, $magento
 $gradient-pink-violet-blue: linear-gradient(238.09deg, $pink -7.95%, $violet 47.87%, $blue 99.65%);
 
 /* 3. Box-shadows */
+$box-shadow-empty: -4px 4px 20px rgba($gray, 0);
 $box-shadow-gray: -4px 4px 20px rgba($gray, 0.2);
 $box-shadow-violet: 0px 2px 4px rgba($violet, 0.4);
 $box-shadow-magento: 0px 2px 4px rgba($magento, 0.4);

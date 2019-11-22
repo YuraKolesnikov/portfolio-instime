@@ -1,46 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Title</title>
-    <meta name="description" content="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta property="og:image" content="path/to/image.jpg" />
-    <link
-      rel="shortcut icon"
-      href="img/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="img/favicon/apple-touch-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="img/favicon/apple-touch-icon-114x114.png"
-    />
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#000" />
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#000" />
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
-  <body>
-    <div class="container pt-5">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Title</title>
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000" />
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+  <!--<div class="container pt-5">
       <div class="row">
-        <button class="button button--magento button--medium">
+        <button class="button button&#45;&#45;magento button&#45;&#45;medium">
           Add
         </button>
-        <div class="button button--with-icon button--magento-violet button--large">
+        <div class="button button&#45;&#45;with-icon button&#45;&#45;magento-violet button&#45;&#45;large">
           <div class="button__icon">
             <svg>
               <use xlink:href="img/icons.svg#apple"></use>
@@ -51,7 +38,7 @@
             <span class="bold">APP STORE</span>
           </div>
         </div>
-        <div class="button button--with-icon button--yellow-magento button--large">
+        <div class="button button&#45;&#45;with-icon button&#45;&#45;yellow-magento button&#45;&#45;large">
           <div class="button__icon">
             <svg>
               <use xlink:href="img/icons.svg#apple"></use>
@@ -59,19 +46,188 @@
           </div>
           <div class="button__text">
             <span>Coming soon to </span> <br/>
-            <span class="bold text--uppercase">Google play</span>
+            <span class="bold text&#45;&#45;uppercase">Google play</span>
           </div>
         </div>
-        <button class="button button--magento button--small">Buy</button>
-        <button class="button button--orange button--x-small">
-          <!-- Fixing invalid icon -->
+        <button class="button button&#45;&#45;magento button&#45;&#45;small">Buy</button>
+        <button class="button button&#45;&#45;orange button&#45;&#45;x-small">
+          &lt;!&ndash; Fixing invalid icon &ndash;&gt;
           <svg style="left: 52%; transform: translate(-50%, -48%)">
             <use xlink:href="img/icons.svg#plus"></use>
           </svg>
         </button>
-        <button class="button button--yellow-magento button--medium text--uppercase">Subscribe</button>
+        <button class="button button&#45;&#45;yellow-magento button&#45;&#45;medium text&#45;&#45;uppercase">Subscribe</button>
       </div>
     </div>
-    <script src="js/scripts.min.js"></script>
-  </body>
+    -->
+  <section class="pricing">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-3 offset-2">
+          <div class="card pricing-card">
+            <div class="pricing-card__term">
+              <span class="pricing-card__term-number">1</span> <span>month</span>
+            </div>
+            <ul class="pricing-card__features-list">
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg>
+                    <use xlink:href="img/icons.svg#eye"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">60 000</p>
+                  <p class="caption">Viewers</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#heart"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">30 000</p>
+                  <p class="caption">Likes</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#comment"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">1 000</p>
+                  <p class="caption">Comments</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#saved-post"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">1 000</p>
+                  <p class="caption">Saved posts</p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card pricing-card">
+            <div class="pricing-card__term">
+              <span class="pricing-card__term-number">1</span> <span>month</span>
+            </div>
+            <ul class="pricing-card__features-list">
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg>
+                    <use xlink:href="img/icons.svg#eye"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">60 000</p>
+                  <p class="caption">Viewers</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#heart"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">30 000</p>
+                  <p class="caption">Likes</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#comment"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">1 000</p>
+                  <p class="caption">Comments</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#saved-post"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">1 000</p>
+                  <p class="caption">Saved posts</p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card pricing-card">
+            <div class="pricing-card__term">
+              <span class="pricing-card__term-number">1</span> <span>month</span>
+            </div>
+            <ul class="pricing-card__features-list">
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg>
+                    <use xlink:href="img/icons.svg#eye"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">60 000</p>
+                  <p class="caption">Viewers</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#heart"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">30 000</p>
+                  <p class="caption">Likes</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#comment"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">1 000</p>
+                  <p class="caption">Comments</p>
+                </div>
+              </li>
+              <li class="pricing-card__feature">
+                <div class="pricing-card__feature-icon">
+                  <svg class="pricing-card__heart-icon">
+                    <use xlink:href="img/icons.svg#saved-post"></use>
+                  </svg>
+                </div>
+                <div class="pricing-card__feature-text">
+                  <p class="price">1 000</p>
+                  <p class="caption">Saved posts</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
