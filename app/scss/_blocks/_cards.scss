@@ -114,6 +114,11 @@
   padding: 100px 0;
 }
 
+.violet {
+  background: $gradient-pink-violet-blue;
+  padding: 100px 0;
+}
+
 .flip-card {
   border: 1px solid rgba(#FFF, .1);
   height: 205px;
@@ -144,13 +149,19 @@
   &__face {
     width: 100%;
     height: 100%;
-    padding: 40px 20px;
+    padding: 30px 20px;
     position: absolute;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     transition: background-color 1s ease, color 1s ease;
+
+    &--front {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
 
     &--back {
       background-color: rgba($color: #FFF, $alpha: 0);
@@ -166,7 +177,6 @@
     width: 60px;
     position: relative;
     border-radius: 50%;
-    margin-bottom: 30px;
     background-color: rgba(#FFF, .1);
 
     & svg { 
@@ -178,12 +188,26 @@
       max-height: 60%; 
       opacity: 1;
       transition: opacity .8s ease;
+
+      &.graph-icon-fix {
+        transform: translate(-55%, -25%);
+      }
+
+      &.lock-icon-fix {
+        & path { transform: scale(1.2) }
+      }
+
+      &.heart-icon-fix {
+        fill: transparent;
+        stroke: #FFF;
+      }
     }
   }
   
   &__title {
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
   }
 
   &__text {

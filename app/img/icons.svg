@@ -43,8 +43,8 @@
     <path d="M21.364 1H29v7.636" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg" id="graph">
-    <path d="M.688.362c-.022 0-.045 0-.067.003a.632.632 0 0 0-.44.225.772.772 0 0 0-.181.5v33.498c0 .13.03.256.089.368a.696.696 0 0 0 .245.269.607.607 0 0 0 .664-.012l2.55-1.71a.65.65 0 0 0 .143-.096l22.276-14.942a.7.7 0 0 0 .234-.266.791.791 0 0 0 0-.718.7.7 0 0 0-.234-.265L3.7 2.282a.664.664 0 0 0-.013-.009.65.65 0 0 0-.154-.105L.998.467a.612.612 0 0 0-.31-.105zm.626 2.02l1.54 1.032 10.713 14.43-10.7 14.411-1.553 1.041V2.381zm4.93 3.308l10.912 7.319-2.74 3.69-8.171-11.01zm12.049 8.081l6.06 4.068-6.066 4.07-3.018-4.065 3.024-4.073zm-3.876 5.22l2.733 3.68L6.26 29.98l8.157-10.988z"
-      fill="#fff"></path>
+    <path d="M29 1L16.91 13.09l-6.364-6.363L1 16.273" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M21.364 1H29v7.636" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol viewBox="0 0 22 6" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamburger">
     <path d="M11 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" stroke="#E73563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -64,12 +64,11 @@
       </clipPath>
     </defs>
   </symbol>
-  <symbol viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg" id="lightning">
-    <path d="M14.333.788L1 17.568h12l-1.333 11.186L25 11.974H13L14.333.788z" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <symbol viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill="transparent" id="lightning">
+    <path d="M14.333.788L1 17.568h12l-1.333 11.186L25 11.974H13L14.333.788z" fill="transparent" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-  <symbol viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg" id="lock">
-    <path d="M11.083 6.417H2.917c-.645 0-1.167.522-1.167 1.166v4.084c0 .644.522 1.166 1.167 1.166h8.166c.645 0 1.167-.522 1.167-1.166V7.583c0-.644-.522-1.166-1.167-1.166zm-7 0V4.083a2.917 2.917 0 1 1 5.834 0v2.334" stroke="#E73563" stroke-width="2" stroke-linecap="round"
-      stroke-linejoin="round"></path>
+  <symbol viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" id="lock">
+    <path d="M23.75 13.75H6.25a2.5 2.5 0 0 0-2.5 2.5V25a2.5 2.5 0 0 0 2.5 2.5h17.5a2.5 2.5 0 0 0 2.5-2.5v-8.75a2.5 2.5 0 0 0-2.5-2.5zm-15 0v-5a6.25 6.25 0 0 1 12.5 0v5" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="mail">
     <path d="M9.5 9.5h38a4.764 4.764 0 0 1 4.75 4.75v28.5a4.764 4.764 0 0 1-4.75 4.75h-38a4.764 4.764 0 0 1-4.75-4.75v-28.5A4.764 4.764 0 0 1 9.5 9.5z" stroke="#E73563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
