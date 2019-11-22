@@ -7,15 +7,11 @@
 }
 
 .pricing-card {
-  padding: 0 10px;
+  padding: 20px 10px;
   border: 1px solid rgba($gray, .05);
   cursor: pointer;
   box-shadow: $box-shadow-empty;
   transition: background-color .35s ease, box-shadow .35s ease, border-radius .15s ease, border-color .25s ease;
-
-  &:first-child {
-    border-right: 0;
-  }
 
   &:hover {
     border-radius: 5px;
@@ -86,6 +82,24 @@
       stroke: $magento !important;
     }
   }
+
+  &__price {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 7px 0;
+  }
+}
+
+[class*=col-]:nth-child(1) {
+  @include card-color($violet)
+}
+
+[class*=col-]:nth-child(2) {
+  @include card-color($pink)
+}
+
+[class*=col-]:nth-child(3) {
+  @include card-color($magento)
 }
 
 .flip-card {

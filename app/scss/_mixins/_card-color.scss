@@ -1,0 +1,22 @@
+@mixin card-color($color) {
+  .pricing-card__term {
+    color: $color;
+  }
+
+  .pricing-card__price {
+    color: $color;
+  }
+
+  .pricing-card__button {
+    background-color: $color;
+    &:hover {
+      background-color: lighten($color, 5%);
+      box-shadow: 0px 2px 4px rgba($color, .4);
+    }
+
+    &:active {
+      background-color: $color;
+      box-shadow: 0px 2px 4px #FFF;
+    }
+  }
+}
