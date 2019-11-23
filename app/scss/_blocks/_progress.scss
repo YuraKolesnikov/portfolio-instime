@@ -1,0 +1,20 @@
+.progress {
+  /* TEMP: */
+  position: relative;
+  height: 5px;
+  background-color: $violet;
+  box-shadow: $box-shadow-violet;
+  border-radius: 40px;
+  
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 80px;
+    background-color: #F8F8F9;
+    transform: translateY(2px);
+    z-index: -100;
+    height: 1px;
+  }
+}
