@@ -219,7 +219,104 @@
 }
 
 .metrics-card {
+  box-shadow: $box-shadow-gray;
+  padding: 15px;
+  border-radius: 5px;
 
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    flex-basis: 65%;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 35px;
+    color: $black;
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: $gray;
+  }
+
+  &__chart {
+    & .circle {
+      padding: 0;
+      text-align: center;
+      height: 70px;
+      width: 70px;
+      border: 6px solid transparent;
+      border-radius: 50%;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(#fff, #fff), $gradient-magento-violet;
+    }
+  }
+
+  &__body {
+
+  }
+
+  &__metrics {
+
+  }
+}
+
+.metrics {
+  padding: 0;
+  margin: 0;
+  &__item {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F6F6F7;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__right {
+    width: 95px;
+  }
+
+  &__icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    transform: translateY(8px);
+
+    &.heart-icon {
+      fill: $magento;
+    }
+  }
+
+  &__desc {
+    font-weight: normal;
+    font-size: 13px;
+    color: $gray;
+    display: block;
+  }
+
+  &__number {
+    font-weight: 900;
+    font-size: 23px;
+    color: $black;
+  }
 }
 
 .like-card {

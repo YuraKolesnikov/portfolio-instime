@@ -1,9 +1,6 @@
 .progress {
-  /* TEMP: */
   position: relative;
   height: 5px;
-  background-color: $violet;
-  box-shadow: $box-shadow-violet;
   border-radius: 40px;
   
   &:before {
