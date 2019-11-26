@@ -7,17 +7,60 @@
 }
 
 .pricing-card {
+  z-index: 2;
   padding: 20px 10px;
   border: 1px solid rgba($gray, .05);
   cursor: pointer;
   box-shadow: $box-shadow-empty;
   transition: background-color .35s ease, box-shadow .35s ease, border-radius .15s ease, border-color .25s ease;
 
+
   &:hover {
     border-radius: 5px;
     background-color: #FFF;
     box-shadow: $box-shadow-gray;
     border-color: #FFF;
+  }
+
+  &__corner-ribbon {
+    top: -5px;
+    right: -5px;
+    height: 80px;
+    width: 78px;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  &__ribbon {
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    transform: rotate(45deg);
+    position: relative;
+    top: 18px;
+    padding: 2px 0;
+    left: 0px;
+    width: 98px;
+    font-size: 11px;
+    background-color: #F18B17;
+
+    &:before,
+    &:after {
+      content: "";
+      border-top:   2px solid #C9710E;   
+      border-left:  2px solid transparent;
+      border-right: 2px solid transparent;
+      position: absolute;
+      bottom: -2px;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
   }
 
   &__term {
