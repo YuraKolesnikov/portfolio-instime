@@ -7,6 +7,9 @@
 }
 
 .pricing-card {
+  min-width: 230px;
+  max-width: 280px;
+  margin: auto;
   z-index: 2;
   padding: 20px 10px;
   border: 1px solid rgba($gray, .05);
@@ -133,21 +136,30 @@
   }
 }
 
-[class*=col-]:nth-child(1) {
+.pricing-card__wrapper:nth-child(2) {
   @include card-color($violet)
 }
 
-[class*=col-]:nth-child(2) {
+.pricing-card__wrapper:nth-child(3) {
   @include card-color($pink)
 }
 
-[class*=col-]:nth-child(3) {
+.pricing-card__wrapper:nth-child(4) {
   @include card-color($magento)
 }
 
 @media (min-width: 992px) {
-  .pricing-card__wrapper:nth-child(1) {
+  .pricing-card__wrapper:nth-child(2) {
     margin-left: 12.5% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: $box-shadow-gray;
+    border-color: #FFF;
   }
 }
 

@@ -1,0 +1,10 @@
+.pricing {
+  background-color: $light-gray;
+
+  &__note {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: $gray;
+  }
+}
