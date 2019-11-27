@@ -1,5 +1,15 @@
 $(function() {
   /* Hamburger animation */
+  $('.js-hamburger-open').on('click', function(e) {
+    $(this).addClass('hidden')
+    $('.js-hamburger-close').removeClass('hidden')
+  })
+
+  $('.js-hamburger-close').on('click', function(e) {
+    $(this).addClass('hidden')
+    $('.js-hamburger-open').removeClass('hidden')
+  })
+
   /*$('.js-hamburger').on('click', function(e) {
     $('.navbar__toggle-icon').toggleClass('active')
     if (!$(this).prop('checked')) {

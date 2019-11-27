@@ -22,9 +22,17 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <nav class="navbar__wrapper">
       <div class="container navbar">
+        <div class="hamburger">
+          <svg class="navbar__icon hamburger js-hamburger-open">
+            <use xlink:href="img/icons.svg#hamburger"></use>
+          </svg>
+          <svg class="navbar__icon hamburger js-hamburger-close hidden">
+            <use xlink:href="img/icons.svg#close-menu"></use>
+          </svg>
+        </div>
         <div class="navbar__brand">
           <svg class="navbar__icon">
             <use xlink:href="img/icons.svg#instagram"></use>
@@ -32,7 +40,7 @@
           Instime Logo
         </div>
         <ul class="navbar__menu">
-          <li class="navbar__item"><a href="#" class="navbar__link active">Main</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Main</a></li>
           <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
           <li class="navbar__item"><a href="#" class="navbar__link">Features</a></li>
           <li class="navbar__item"><a href="#" class="navbar__link">Prices</a></li>
@@ -45,198 +53,15 @@
             </button>
           </li>
         </ul>
+        <div class="login-button">
+          <svg class="navbar__icon">
+            <use xlink:href="img/icons.svg#lock"></use>
+          </svg>
+        </div>
       </div>
     </nav>
-  </header> -->
-  <section class="pricing py-5">
-    <div class="container">
-      <div class="row no-gutters">
-        <div class="col-12">
-          <h3 class="section-title py-3">
-            Prices
-          </h3>
-          <p class="pricing__note text-center mb-5">
-            Check out our INSTIME packages and choose the one that's best for you:
-          </p>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pricing-card__wrapper mb-4 mb-md-0">
-          <div class="card pricing-card">
-            <div class="pricing-card__term">
-              <span class="pricing-card__term-number">1</span> <span>month</span>
-            </div>
-            <ul class="pricing-card__features-list">
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg>
-                    <use xlink:href="img/icons.svg#eye"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">60 000</p>
-                  <p class="caption">Viewers</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#heart"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">30 000</p>
-                  <p class="caption">Likes</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#comment"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">1 000</p>
-                  <p class="caption">Comments</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#saved-post"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">1 000</p>
-                  <p class="caption">Saved posts</p>
-                </div>
-              </li>
-            </ul>
-            <div class="pricing-card__price">$ 200</div>
-            <button class="button button--small pricing-card__button text--uppercase">Buy</button>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pricing-card__wrapper mb-4 mb-md-0">
-          <div class="card pricing-card">
-            <div class="pricing-card__corner-ribbon">
-              <div class="pricing-card__ribbon">
-                optimal
-              </div>
-            </div>
-            <div class="pricing-card__term">
-              <span class="pricing-card__term-number">1</span> <span>month</span>
-            </div>
-            <ul class="pricing-card__features-list">
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg>
-                    <use xlink:href="img/icons.svg#eye"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">60 000</p>
-                  <p class="caption">Viewers</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#heart"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">30 000</p>
-                  <p class="caption">Likes</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#comment"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">1 000</p>
-                  <p class="caption">Comments</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#saved-post"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">1 000</p>
-                  <p class="caption">Saved posts</p>
-                </div>
-              </li>
-            </ul>
-            <div class="pricing-card__price">$ 200</div>
-            <button class="button button--small pricing-card__button text--uppercase">Buy</button>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pricing-card__wrapper mb-4 mb-md-0">
-          <div class="card pricing-card">
-            <div class="pricing-card__term">
-              <span class="pricing-card__term-number">1</span> <span>month</span>
-            </div>
-            <ul class="pricing-card__features-list">
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg>
-                    <use xlink:href="img/icons.svg#eye"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">60 000</p>
-                  <p class="caption">Viewers</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#heart"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">30 000</p>
-                  <p class="caption">Likes</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#comment"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">1 000</p>
-                  <p class="caption">Comments</p>
-                </div>
-              </li>
-              <li class="pricing-card__feature">
-                <div class="pricing-card__feature-icon">
-                  <svg class="pricing-card__heart-icon">
-                    <use xlink:href="img/icons.svg#saved-post"></use>
-                  </svg>
-                </div>
-                <div class="pricing-card__feature-text">
-                  <p class="price">1 000</p>
-                  <p class="caption">Saved posts</p>
-                </div>
-              </li>
-            </ul>
-            <div class="pricing-card__price">$ 200</div>
-            <button class="button button--small pricing-card__button text--uppercase">Buy</button>
-          </div>
-        </div>
-        <div class="col-12">
-          <p class="pricing__note text-center mt-5">
-            Note that the % for your referrals will be credited from the amount you pay for your package. 
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </header>
+  
   <script src="js/scripts.min.js"></script>
 </body>
 

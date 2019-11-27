@@ -83,3 +83,20 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .navbar__menu {
+    flex-basis: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar {
+    margin: 0;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
