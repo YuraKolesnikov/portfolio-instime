@@ -15,6 +15,17 @@
     outline: none;
   }
 
+  &--navmenu {
+    display: block;
+    width: 100% !important;
+    border-radius: 0;
+    justify-content: center !important;
+
+    & .button__text {
+      width: 40%;
+    }
+  }
+
   &--large {
     width: 220px;
     height: 60px;

@@ -1,23 +1,27 @@
 $(function() {
+  $(document).on('click', function(e) {
+    closeModal(e)
+  })
+
   /* Hamburger animation */
-  $('.js-hamburger-open').on('click', function(e) {
-    $(this).addClass('hidden')
+  $('.js-hamburger-open').on('click', openModal)
+  $('.js-hamburger-close').on('click', closeModal)
+
+  function openModal(e) {
+    e.stopPropagation();
+    $('.js-hamburger-open').addClass('hidden')
     $('.js-hamburger-close').removeClass('hidden')
-  })
+    $('.js-mobile-menu').addClass('open')
+  }
 
-  $('.js-hamburger-close').on('click', function(e) {
-    $(this).addClass('hidden')
+  function closeModal(e) {
+    e.stopPropagation();
+    $('.js-hamburger-close').addClass('hidden')
     $('.js-hamburger-open').removeClass('hidden')
-  })
+    $('.js-mobile-menu').removeClass('open')
+  }
 
-  /*$('.js-hamburger').on('click', function(e) {
-    $('.navbar__toggle-icon').toggleClass('active')
-    if (!$(this).prop('checked')) {
-      setTimeout(function() {
-        $('.navbar__menu').css('display', 'none')
-      }, 200)
-    }
-  })*/
+
   var progressValues = {
     value: 827,
     max: 1000
