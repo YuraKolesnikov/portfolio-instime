@@ -154,3 +154,13 @@
     }
   }
 }
+
+.login-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .login-button {
+    display: block;
+  }
+}
