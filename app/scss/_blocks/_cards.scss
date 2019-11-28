@@ -179,12 +179,10 @@
   height: 205px;
   position: relative;
   color: #FFF;
-  transition: transform 1s;
-  transform-style: preserve-3d;
+  transition: transform .5s;
   cursor: pointer;
 
   &:hover {
-    transform: rotateY(180deg);
 
     .flip-card__face--front {
       color: rgba(#FFF, 0);
@@ -209,8 +207,8 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
-    transition: background-color 1s ease, color 1s ease;
+    /* justify-content: center; */
+    transition: background-color .5s ease, color .5s ease;
 
     &--front {
       display: flex;
@@ -221,7 +219,6 @@
     &--back {
       background-color: rgba($color: #FFF, $alpha: 0);
       color: rgba($color: $black, $alpha: 0);
-      transform: rotateY(180deg);
       border-radius: 5px;
       box-shadow: $box-shadow-empty;
     }

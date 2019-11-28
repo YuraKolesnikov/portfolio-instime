@@ -3,6 +3,7 @@ $(function() {
     closeModal(e)
   })
 
+  /* Intersection observer */
   var heroRight = document.querySelector('.hero .hero__right')
   var heroLeft = document.querySelector('.hero .hero__left')
   console.log(heroRight)
@@ -21,6 +22,17 @@ $(function() {
 
   observer.observe(heroRight)
   observer.observe(heroLeft)
+
+  /* Nav links */
+  $('.js-navbar-link').on('click', function(e) {
+    e.preventDefault()
+    var id = $(this).attr('href').slice(1)
+    console.log(id)
+    document.querySelector('#' + id).scrollIntoView({
+      block: 'start',
+      behavior: 'smooth'
+    })
+  })
 
   /* Hamburger animation */
   $('.js-hamburger-open').on('click', openModal)
