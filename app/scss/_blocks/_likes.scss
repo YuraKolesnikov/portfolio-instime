@@ -1,0 +1,30 @@
+.likes {
+  overflow: hidden;
+  & .like-card {
+    position: relative;
+    z-index: 5;
+    background-color: #FFF;
+  }
+
+
+  & .container {
+    position: relative;
+    z-index: 1;
+    &:after {
+      position: absolute;
+      top: 0px;
+      right: -130px;
+      content: "";
+      padding: 20px;
+      border: 50px solid transparent;
+      border-radius: 15px;
+      transform: rotate(-45deg);
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(#fff, #fff), $gradient-magento-violet;
+      z-index: -1;
+      width: 480px;
+      height: 480px;
+    }
+  }
+}

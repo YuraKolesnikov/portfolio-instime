@@ -375,13 +375,18 @@
 }
 
 .like-card {
-  height: 410px;
+  height: 430px;
+  min-width: 240px;
+  max-width: 300px;
+  margin-right: 0;
+  margin-left: auto;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   box-shadow: $box-shadow-gray;
+  position: relative;
 
   &__title {
     font-weight: 900;

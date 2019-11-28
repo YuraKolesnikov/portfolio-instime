@@ -36,11 +36,11 @@ $(function() {
 
   
   /* Like card */
-  $('.js-like-card-active-range').css('width', ($('.js-like-card-range').attr('value') / 100) + '%')
+  $('.js-like-card-active-range').css('width', ($('.js-like-card-range').attr('value') / 10) + '%')
   $('.js-like-card-amount').text($('.js-like-card-range').attr('value'))
   $('.js-like-card-range').on('input', function(e) {
     $('.js-like-card-amount').text(e.target.value)
-    var calculatedWidth = e.target.value / 100
+    var calculatedWidth = e.target.value / 10
     $('.js-like-card-active-range').css('width', calculatedWidth + '%')
   })
 
