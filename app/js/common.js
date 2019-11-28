@@ -3,6 +3,25 @@ $(function() {
     closeModal(e)
   })
 
+  var heroRight = document.querySelector('.hero .hero__right')
+  var heroLeft = document.querySelector('.hero .hero__left')
+  console.log(heroRight)
+
+  var options = {
+    threshold: 0.75
+  }
+
+  var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('hidden')
+      }
+    })
+  }, options)
+
+  observer.observe(heroRight)
+  observer.observe(heroLeft)
+
   /* Hamburger animation */
   $('.js-hamburger-open').on('click', openModal)
   $('.js-hamburger-close').on('click', closeModal)

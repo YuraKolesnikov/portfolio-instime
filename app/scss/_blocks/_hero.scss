@@ -5,6 +5,13 @@
     background-image: url('../img/hero.png');
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 1s ease;
+
+    &.hidden {
+      transition: opacity 1s ease;
+      opacity: 0;
+    }
   }
 
   &__right {
@@ -12,6 +19,16 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform .5s ease;
+
+    &.hidden {
+      transition: opacity 1s ease, transform .5s ease;
+      transform: translateX(300px);
+      position: relative;
+      opacity: 0;
+    }
   }
 
   &__title {
