@@ -1,0 +1,29 @@
+.bulleted-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: $gray;
+    margin-left: 25px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      top: 52%;
+      left: -25px;
+      transform: translateY(-50%);
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(#fff, #fff), $gradient-yellow-magento-1;
+    }
+  }
+}
