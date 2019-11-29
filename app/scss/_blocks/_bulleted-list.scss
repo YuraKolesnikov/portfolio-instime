@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 
+  &--two-columns {
+    column-count: 2;
+  }
+
   &__item {
     font-weight: 300;
     font-size: 16px;

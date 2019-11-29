@@ -164,14 +164,18 @@
 }
 
 /* TEMP: */
-.features {
+.benefits {
   background: $gradient-yellow-magento-2;
   padding: 100px 0;
 }
 
+.features {
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+
 .violet {
   background: $gradient-pink-violet-blue;
-  padding: 100px 0;
 }
 
 .flip-card {
@@ -183,7 +187,6 @@
   cursor: pointer;
 
   &:hover {
-
     .flip-card__face--front {
       color: rgba(#FFF, 0);
 
@@ -207,13 +210,14 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     transition: background-color .5s ease, color .5s ease;
 
     &--front {
       display: flex;
       flex-flow: column;
       justify-content: space-between;
+      transform: rotateY(0) rotateX(0);
     }
 
     &--back {
