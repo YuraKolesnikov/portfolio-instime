@@ -1,0 +1,15 @@
+.text {
+  &-orange { color: $orange; }
+  &-magento { color: $magento; }
+  &-pink { color: $pink; }  
+  &-violet { color: $violet; }
+  &-dark-violet { color: $dark-violet; }
+
+  &-center {
+    text-align: center;
+  }
+  
+  &-white {
+    color: #FFF;
+  }
+}
