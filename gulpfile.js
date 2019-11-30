@@ -40,7 +40,6 @@ gulp.task('js', ['common-js'], function () {
   return gulp.src([
     'app/libs/jquery/dist/jquery.min.js',
     'app/libs/flickity/flickity.min.js',
-    'app/libs/chart/chart.js',
     'app/js/common.min.js', // Всегда в конце
   ])
     .pipe(concat('scripts.min.js'))

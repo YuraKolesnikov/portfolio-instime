@@ -60,19 +60,8 @@
       transform: translateX(0);
 
       .navbar__item {
-        transition: padding 1s ease;
-        &:nth-child(1) {
-          padding-right: 0px;
-        }
-        &:nth-child(2) {
-          padding-right: 0px;
-        }
-        &:nth-child(3) {
-          padding-right: 0px;
-        }
-        &:nth-child(4) {
-          padding-right: 0px;
-        }
+        transition: transform .35s ease;
+        transform: translateX(0);
       }
     }
 
@@ -82,18 +71,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: padding 1s ease;
+      transition: transform .35s ease;
+      transform: translateX(-300px);
       &:nth-child(1) {
-        padding-right: 200px;
+        transition-delay: .35s;
       }
       &:nth-child(2) {
-        padding-right: 150px;
+        transition-delay: .25s;
       }
       &:nth-child(3) {
-        padding-right: 100px;
+        transition-delay: .15s;
       }
       &:nth-child(4) {
-        padding-right: 50px;
+        transition-delay: 0;
       }
     }
   }

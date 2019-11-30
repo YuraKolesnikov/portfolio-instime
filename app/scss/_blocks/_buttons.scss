@@ -125,13 +125,26 @@
   }
 
   &--magento-violet {
-    background: $gradient-magento-violet;
-    background-size: 100%;
-    background-position: 0%;
+    background: $violet;
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      background: $gradient-magento-violet;
+      z-index: -1;
+      transition: opacity .35s ease;
+    }
+
     &:hover {
-      background-size: 600%;
-      background-position: 0%;
-      box-shadow: $box-shadow-violet;
+      &:after {
+        opacity: 0;
+      }
     }
 
     &:active {
@@ -140,18 +153,44 @@
   }
 
   &--yellow-magento {
-    background: $gradient-yellow-magento-1;
+    background: $magento;
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      background: $gradient-yellow-magento-1;
+      z-index: -1;
+      transition: opacity .35s ease;
+    }
+
+    &:hover {
+      box-shadow: $box-shadow-violet;
+      &:after {
+        opacity: 0;
+      }
+    }
+
+    /* &:active {
+      box-shadow: none;
+    }
+    background: ;
     background-size: 100%;
     background-position: 0%;
     &:hover {
       background-size: 600%;
       background-position: 0%;
-      box-shadow: $box-shadow-violet;
+      
     }
 
     &:active {
       box-shadow: none;
-    }
+    } */
   }
 }
 

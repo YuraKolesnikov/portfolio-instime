@@ -1,7 +1,6 @@
 $(function() {
-  if (Chart) {
-    console.log('chart.js loaded')
-  }
+  
+
   $(document).on('click', function(e) {
     closeModal(e)
   })
@@ -9,7 +8,6 @@ $(function() {
   /* Intersection observer */
   var heroRight = document.querySelector('.hero .hero__right')
   var heroLeft = document.querySelector('.hero .hero__left')
-  console.log(heroRight)
 
   var options = {
     threshold: 0.75
