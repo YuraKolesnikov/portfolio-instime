@@ -1,0 +1,26 @@
+.play-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: $gradient-yellow-magento-1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 0;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  outline: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  &__icon {
+    fill: none;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 30px);
+  }
+}

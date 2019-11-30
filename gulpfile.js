@@ -2,7 +2,6 @@ var gulp = require('gulp'),
   gutil = require('gulp-util'),
   sass = require('gulp-sass'),
   browserSync = require('browser-sync'),
-  svgSprite = require('gulp-svg-sprite')
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   cleanCSS = require('gulp-clean-css'),
@@ -41,6 +40,7 @@ gulp.task('js', ['common-js'], function () {
   return gulp.src([
     'app/libs/jquery/dist/jquery.min.js',
     'app/libs/flickity/flickity.min.js',
+    'app/libs/chart/chart.js',
     'app/js/common.min.js', // Всегда в конце
   ])
     .pipe(concat('scripts.min.js'))

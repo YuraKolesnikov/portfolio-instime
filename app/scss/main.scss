@@ -9,6 +9,8 @@
 @import "_blocks/bulleted-list";
 @import "_blocks/buttons";
 @import "_blocks/cards";
+@import "_blocks/circle";
+@import "_blocks/footer";
 @import "_blocks/hamburger";
 @import "_blocks/hero";
 @import "_blocks/likes";
@@ -16,11 +18,14 @@
 @import "_blocks/navbar";
 @import "_blocks/paragraph";
 @import "_blocks/percent-tag";
+@import "_blocks/play-button";
 @import "_blocks/pricing";
 @import "_blocks/progress";
 @import "_blocks/section-title";
 @import "_blocks/section";
+@import "_blocks/subscribe-form";
 @import "_blocks/text";
+@import "_blocks/video";
 
 .test {
   height: 200px;
@@ -41,4 +46,5 @@
 
 .profits {
   background-color: $light-gray;
+  overflow: hidden;
 }

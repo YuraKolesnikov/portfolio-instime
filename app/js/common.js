@@ -1,4 +1,7 @@
 $(function() {
+  if (Chart) {
+    console.log('chart.js loaded')
+  }
   $(document).on('click', function(e) {
     closeModal(e)
   })
