@@ -6,5 +6,35 @@
     font-size: 16px;
     line-height: 28px;
     color: $gray;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform .55s ease, opacity .35s ease;
+  }
+
+  &.hidden {
+    & .section-title {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    & .pricing__note {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    & .pricing-card__wrapper {
+      opacity: 0;
+    }
+
+    & .pricing-card__wrapper:nth-child(2) {
+      transform: translateX(250px);
+    }
+
+    & .pricing-card__wrapper:nth-child(3) {
+      transform: scale(.9);
+    }
+    & .pricing-card__wrapper:nth-child(4) {
+      transform: translateX(-250px);
+    }
   }
 }

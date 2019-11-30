@@ -1,0 +1,149 @@
+.like-card {
+  height: 430px;
+  min-width: 240px;
+  max-width: 300px;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: $box-shadow-gray;
+  position: relative;
+
+  &__title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: $black;
+  }
+
+  &__img {
+    height: 120px;
+    width: 120px;
+    border-radius: 5px;
+  }
+
+  &__amount {
+    width: 120px;
+    background-color: #FAFBFC;
+    border: 1px solid #E9EAEC;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  &__range-wrapper {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__active-range {
+    height: 5px;
+    border-radius: 5px;
+    background: $gradient-magento-violet;
+    position: absolute;
+  }
+
+  &__range {
+    width: 100%;
+    -webkit-appearance: none;
+
+    &:focus { outline: 0; }
+
+    &::-webkit-slider-runnable-track {
+      width: 100%; 
+      height: 2px; 
+      cursor: pointer; 
+      // animate: .2s;
+      animation: .2s; 
+      background-color: #E9EAEC;
+      border-radius: 1px; 
+      box-shadow: none; 
+      border: 0; 
+    }
+    
+    &::-webkit-slider-thumb {
+      z-index: 2; 
+      position: relative; 
+      height: 32px; 
+      width: 32px; 
+      border-radius: 50%; 
+      background-color: #FFF;
+      border: 1px solid #EDEDEE;
+      box-shadow: 0px 5px 10px #DCDCDC;
+      cursor: pointer; 
+      -webkit-appearance: none; 
+      margin-top: -16px; 
+    }
+    
+    &::-moz-range-track {
+      width: 100%; 
+      height: 2px; 
+      cursor: pointer; 
+      // animate: .2s;
+      animation: .2s; 
+      background: #3FAFFA; 
+      border-radius: 1px; 
+      box-shadow: none; 
+      border: 0; 
+    }
+    
+    &::-moz-range-thumb {
+      z-index: 2; 
+      position: relative; 
+      box-shadow: 0px 0px 0px #000;
+      border: 1px solid #2497e3;
+      height: 18px; 
+      width: 18px; 
+      border-radius: 50%; 
+      background: #3FAFFA; 
+      cursor: pointer; 
+    }
+    
+    &::-ms-track {
+      width: 100%; 
+      height: 5px; 
+      cursor: pointer; 
+      // animate: .2s;
+      animation: .2s; 
+      background: transparent; 
+      border-color: transparent; 
+      color: transparent; 
+    }
+    
+    &::-ms-fill-lower,
+    &::-ms-fill-upper {
+      background: #3FAFFA; 
+      border-radius: 1px; 
+      box-shadow: none; 
+      border: 0; 
+    }
+    
+    &::-ms-thumb {
+      z-index: 2; 
+      position: relative; 
+      // box-shadow: 0px 0px 0px #000;
+      // border: 1px solid #2497e3;
+      height: 18px; 
+      width: 18px; 
+      border-radius: 50%; 
+      background: #3FAFFA; 
+      cursor: pointer; 
+    }
+  }
+
+  &__range-values {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 16px;
+    color: $gray;
+  }
+}

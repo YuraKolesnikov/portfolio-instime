@@ -1,0 +1,53 @@
+.metrics-card {
+  box-shadow: $box-shadow-gray;
+  padding: 15px;
+  border-radius: 5px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    flex-basis: 65%;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 35px;
+    color: $black;
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: $gray;
+  }
+
+  &__chart {
+    & .circle {
+      padding: 0;
+      padding-top: 12px;
+      text-align: center;
+      height: 70px;
+      width: 70px;
+      border: 6px solid transparent;
+      border-radius: 50%;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(#fff, #fff), $gradient-magento-violet;
+    }
+  }
+
+  &__body {
+
+  }
+
+  &__metrics {
+
+  }
+}

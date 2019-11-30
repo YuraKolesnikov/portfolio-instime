@@ -6,9 +6,12 @@ $(function() {
   })
 
   /* Intersection observer */
-  var heroRight = document.querySelector('.hero .hero__right')
-  var heroLeft = document.querySelector('.hero .hero__left')
+  var hero = document.querySelector('.hero')
+  var navbarBrand = document.querySelector('.navbar__brand')
+  var navbarLinks = Array.from(document.querySelectorAll('.navbar__item'))
 
+  var pricingSection = document.querySelector('.pricing')
+  console.log(navbarLinks)
   var options = {
     threshold: 0.75
   }
@@ -21,8 +24,12 @@ $(function() {
     })
   }, options)
 
-  observer.observe(heroRight)
-  observer.observe(heroLeft)
+  observer.observe(hero)
+  observer.observe(navbarBrand)
+  navbarLinks.forEach(function(link) {
+    observer.observe(link)
+  })
+  observer.observe(pricingSection)
 
   /* Nav links */
   $('.js-navbar-link').on('click', function(e) {

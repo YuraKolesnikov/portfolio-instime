@@ -11,16 +11,21 @@
 @import "_blocks/cards";
 @import "_blocks/circle";
 @import "_blocks/earnings";
+@import "_blocks/flip-card";
 @import "_blocks/footer";
 @import "_blocks/hamburger";
 @import "_blocks/hero";
 @import "_blocks/income-graph";
+@import "_blocks/like-card";
 @import "_blocks/likes";
 @import "_blocks/list";
+@import "_blocks/metrics-card";
+@import "_blocks/metrics";
 @import "_blocks/navbar";
 @import "_blocks/paragraph";
 @import "_blocks/percent-tag";
 @import "_blocks/play-button";
+@import "_blocks/pricing-card";
 @import "_blocks/pricing";
 @import "_blocks/progress";
 @import "_blocks/section-title";
@@ -28,6 +33,7 @@
 @import "_blocks/subscribe-form";
 @import "_blocks/text";
 @import "_blocks/video";
+
 
 .test {
   height: 200px;

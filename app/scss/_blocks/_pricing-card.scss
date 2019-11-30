@@ -1,0 +1,165 @@
+.pricing-card {
+  min-width: 230px;
+  max-width: 280px;
+  margin: auto;
+  z-index: 2;
+  padding: 20px 10px;
+  border: 1px solid rgba($gray, .05);
+  cursor: pointer;
+  box-shadow: $box-shadow-empty;
+  opacity: 1;
+  transition: background-color .35s ease, box-shadow .35s ease, border-radius .15s ease, border-color .25s ease;
+
+
+  &:hover {
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: $box-shadow-gray;
+    border-color: #FFF;
+  }
+
+  &__corner-ribbon {
+    top: -5px;
+    right: -5px;
+    height: 80px;
+    width: 78px;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  &__ribbon {
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    transform: rotate(45deg);
+    position: relative;
+    top: 18px;
+    padding: 2px 0;
+    left: 0px;
+    width: 98px;
+    font-size: 11px;
+    background-color: #F18B17;
+
+    &:before,
+    &:after {
+      content: "";
+      border-top:   2px solid #C9710E;   
+      border-left:  2px solid transparent;
+      border-right: 2px solid transparent;
+      position: absolute;
+      bottom: -2px;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+
+  &__term {
+    text-align: center;
+    background-color: transparent;
+    &-number {
+      display: block;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: bold;
+    }
+  }
+
+  &__features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba($gray, .05);
+    &:first-child {
+      border-top: 1px solid rgba($gray, .05);
+    }
+  }
+
+  &__feature-icon {
+    margin-right: 10px;
+    & svg {
+      width: 18px;
+      height: 12px;
+    }
+  }
+
+  &__feature-text {
+    text-align: left;
+
+    & .price {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      color: $black;
+    }
+
+    & .caption {
+      color: $gray;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 13px;
+    }
+  }
+
+  &__heart-icon {
+    fill: $magento !important;
+    & path {
+      stroke: $magento !important;
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 7px 0;
+  }
+}
+
+.pricing-card__wrapper {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity .35s ease, transform .55s ease;
+}
+
+.pricing-card__wrapper:nth-child(2) {
+  @include card-color($violet);
+  transition-delay: .35s;
+}
+
+.pricing-card__wrapper:nth-child(3) {
+  @include card-color($pink)
+}
+
+.pricing-card__wrapper:nth-child(4) {
+  @include card-color($magento);
+  transition-delay: .35s;
+}
+
+@media (min-width: 992px) {
+  .pricing-card__wrapper:nth-child(2) {
+    margin-left: 12.5% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: $box-shadow-gray;
+    border-color: #FFF;
+  }
+}
