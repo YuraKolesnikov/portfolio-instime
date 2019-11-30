@@ -9,4 +9,10 @@
   font-size: 25px;
   line-height: 38px;
   margin-bottom: 30px;
+  color: $black;
+
+  &--sm {
+    font-size: 15px;
+    line-height: 23px;
+  }
 }
