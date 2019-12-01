@@ -2,7 +2,7 @@ $(function() {
   
 
   $(document).on('click', function(e) {
-    closeModal(e)
+    closeMenu(e)
   })
 
   /* Intersection observer */
@@ -11,7 +11,7 @@ $(function() {
   var navbarLinks = Array.from(document.querySelectorAll('.navbar__item'))
 
   var pricingSection = document.querySelector('.pricing')
-  console.log(navbarLinks)
+
   var options = {
     threshold: 0.75
   }
@@ -29,7 +29,7 @@ $(function() {
   navbarLinks.forEach(function(link) {
     observer.observe(link)
   })
-  observer.observe(pricingSection)
+  /* observer.observe(pricingSection) */
 
   /* Nav links */
   $('.js-navbar-link').on('click', function(e) {
@@ -43,17 +43,19 @@ $(function() {
   })
 
   /* Hamburger animation */
-  $('.js-hamburger-open').on('click', openModal)
-  $('.js-hamburger-close').on('click', closeModal)
+  $('.js-hamburger-open').on('click', openMenu)
+  $('.js-hamburger-close').on('click', closeMenu)
 
-  function openModal(e) {
+  function openMenu(e) {
+    console.log('Opening menu...')
     e.stopPropagation();
     $('.js-hamburger-open').addClass('hidden')
     $('.js-hamburger-close').removeClass('hidden')
     $('.js-mobile-menu').addClass('open')
   }
 
-  function closeModal(e) {
+  function closeMenu(e) {
+    console.log('Closing menu')
     e.stopPropagation();
     $('.js-hamburger-close').addClass('hidden')
     $('.js-hamburger-open').removeClass('hidden')

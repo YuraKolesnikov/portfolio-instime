@@ -1,3 +1,52 @@
 .footer {
-  
+  & .container {
+    border-top: 1px solid $light-gray;
+  }
+
+  &__brand {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+
+  &__copyright {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: $gray;
+  }
+
+  &__links {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    
+    transition: color .35s ease;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    & a { 
+      color: $gray; 
+
+      &:hover {
+        text-decoration: none;
+        color: darken($gray, 10%);
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    text-align: center;
+  }
 }

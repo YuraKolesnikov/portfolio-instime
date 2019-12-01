@@ -17,6 +17,12 @@
   padding-bottom: 300px;
 }
 
+@media (max-width: 480px) {
+  .features {
+    padding-bottom: 50px;
+  }
+}
+
 .violet {
   background: $gradient-pink-violet-blue;
 }

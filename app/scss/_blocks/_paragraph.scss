@@ -16,3 +16,9 @@
     line-height: 23px;
   }
 }
+
+@media (max-width: 768px) {
+  .paragraph-title {
+    text-align: center;
+  }
+}

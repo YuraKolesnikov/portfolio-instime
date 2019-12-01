@@ -45,3 +45,11 @@
     color: $black;
   }
 }
+
+@media (max-width: 768px) {
+  .metrics .row {
+    & .col-12:first-child {
+      order: 2;
+    }
+  }
+}

@@ -10,6 +10,7 @@
   & .container {
     position: relative;
     z-index: 1;
+
     &:after {
       position: absolute;
       top: 0px;
@@ -26,5 +27,11 @@
       width: 480px;
       height: 480px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .likes .container:after {
+    display: none;
   }
 }

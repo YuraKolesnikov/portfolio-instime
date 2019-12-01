@@ -43,3 +43,11 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .earnings .row {
+    & .col-12:first-child {
+      order: 2;
+    }
+  }
+}

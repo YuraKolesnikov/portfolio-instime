@@ -132,7 +132,7 @@
 .pricing-card__wrapper {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity .35s ease, transform .55s ease;
+  transition: opacity 1s ease, transform .55s ease;
 }
 
 .pricing-card__wrapper:nth-child(2) {

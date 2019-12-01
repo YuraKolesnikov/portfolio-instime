@@ -147,3 +147,9 @@
     color: $gray;
   }
 }
+
+@media (max-width: 768px) {
+  .like-card {
+    margin: auto;
+  }
+}
