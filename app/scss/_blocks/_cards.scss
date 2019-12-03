@@ -10,11 +10,31 @@
 .benefits {
   background: $gradient-yellow-magento-2;
   padding: 100px 0;
+
+  & .container {
+    transition: opacity .75s ease, transform .75s ease;
+    transition-delay: .2s;
+
+    &.hidden {
+      opacity: 0;
+      transform: translateY(150px);
+    }
+  }
 }
 
 .features {
   padding-top: 100px;
   padding-bottom: 300px;
+
+  & .container {
+    transition: opacity .75s ease, transform .75s ease;
+    transition-delay: .2s;
+
+    &.hidden {
+      opacity: 0;
+      transform: translateY(150px);
+    }
+  }
 }
 
 @media (max-width: 480px) {

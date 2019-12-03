@@ -7,13 +7,21 @@ $(function() {
 
   /* Intersection observer */
   var hero = document.querySelector('.hero')
+  var likesSection = document.querySelector('.likes').querySelector('.container')
+  var earningsSection = document.querySelector('.earnings > .container')
+  var profitsSection = document.querySelector('.profits > .container')
+  var featuresSection = document.querySelector('.features > .container')
+  var iphone = document.querySelector('.iphone-img')
+  var metricsSection = document.querySelector('.metrics > .container')
+  var benefitsSection = document.querySelector('.benefits > .container')
   var navbarBrand = document.querySelector('.navbar__brand')
   var navbarLinks = Array.from(document.querySelectorAll('.navbar__item'))
 
   var pricingSection = document.querySelector('.pricing')
 
+
   var options = {
-    threshold: 0.75
+    threshold: 0.5
   }
 
   var observer = new IntersectionObserver(function(entries, observer) {
@@ -26,10 +34,18 @@ $(function() {
 
   observer.observe(hero)
   observer.observe(navbarBrand)
+  observer.observe(likesSection)
+  observer.observe(earningsSection)
+  observer.observe(profitsSection)
+  observer.observe(featuresSection)
+  observer.observe(metricsSection)
+  observer.observe(benefitsSection)
+  observer.observe(iphone)
+
   navbarLinks.forEach(function(link) {
     observer.observe(link)
   })
-  /* observer.observe(pricingSection) */
+  observer.observe(pricingSection)
 
   /* Nav links */
   $('.js-navbar-link').on('click', function(e) {

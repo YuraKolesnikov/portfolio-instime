@@ -28,6 +28,7 @@
 @import "_blocks/play-button";
 @import "_blocks/pricing-card";
 @import "_blocks/pricing";
+@import "_blocks/profits";
 @import "_blocks/progress";
 @import "_blocks/section-title";
 @import "_blocks/section";
@@ -56,4 +57,14 @@
 .profits {
   background-color: $light-gray;
   overflow: hidden;
+}
+
+.iphone-img {
+  transition: opacity .75s ease, transform .75s ease;
+  transition-delay: .2s;
+
+  &.hidden {
+    opacity: 0;
+    transform: scale(0);
+  }
 }

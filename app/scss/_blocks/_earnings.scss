@@ -1,5 +1,14 @@
 .earnings {
-
+  & .container {
+    transition: opacity .75s ease, transform .75s ease;
+    transition-delay: .25s;
+    transform: translateZ(0);
+    &.hidden {
+      opacity: 0;
+      transform: translate3d(0, 100px, 0);
+    }
+  }
+  
   &__overview {
 
   }
