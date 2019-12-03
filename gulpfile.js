@@ -65,12 +65,17 @@ gulp.task('watch', ['scss', 'js', 'browser-sync'], function () {
 });
 
 gulp.task('imagemin', function () {
-  return gulp.src('app/img/**/*')
+  return gulp.src('app/img/**/*.png')
     .pipe(cache(imagemin())) // Cache Images
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function () {
+gulp.task('svg', function() {
+  return gulp.src('app/img/icons.svg')
+  .pipe(gulp.dest('dist/img'))
+})
+
+gulp.task('build', ['removedist', 'imagemin', 'svg', 'scss', 'js'], function () {
 
   var buildFiles = gulp.src([
     'app/*.html',
