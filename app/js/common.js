@@ -1,5 +1,6 @@
 $(function() {
-  
+  var viewport = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+  console.log(viewport)
 
   $(document).on('click', function(e) {
     closeMenu(e)
@@ -32,20 +33,37 @@ $(function() {
     })
   }, options)
 
-  observer.observe(hero)
-  observer.observe(navbarBrand)
-  observer.observe(likesSection)
-  observer.observe(earningsSection)
-  observer.observe(profitsSection)
-  observer.observe(featuresSection)
-  observer.observe(metricsSection)
-  observer.observe(benefitsSection)
-  observer.observe(iphone)
+  if (viewport > 768) {
+    observer.observe(hero)
+    observer.observe(navbarBrand)
+    observer.observe(likesSection)
+    observer.observe(earningsSection)
+    observer.observe(profitsSection)
+    observer.observe(featuresSection)
+    observer.observe(metricsSection)
+    observer.observe(benefitsSection)
+    observer.observe(iphone)
 
-  navbarLinks.forEach(function(link) {
-    observer.observe(link)
-  })
-  observer.observe(pricingSection)
+    navbarLinks.forEach(function(link) {
+      observer.observe(link)
+    })
+    observer.observe(pricingSection)
+  } else {
+      hero.classList.remove('hidden')
+      navbarBrand.classList.remove('hidden')
+      likesSection.classList.remove('hidden')
+      earningsSection.classList.remove('hidden')
+      profitsSection.classList.remove('hidden')
+      featuresSection.classList.remove('hidden')
+      metricsSection.classList.remove('hidden')
+      benefitsSection.classList.remove('hidden')
+      iphone.classList.remove('hidden')
+      pricingSection.classList.remove('hidden')
+      
+      navbarLinks.forEach(function(link) {
+        link.classList.remove('hidden')
+      })
+  }
 
   /* Nav links */
   $('.js-navbar-link').on('click', function(e) {
