@@ -99,7 +99,7 @@
 
   &__feature-text {
     text-align: left;
-
+    min-width: 70px;
     & .price {
       display: block;
       font-size: 18px;
@@ -117,9 +117,18 @@
 
   &__heart-icon {
     fill: $magento !important;
+    transform: translateX(-1px);
     & path {
       stroke: $magento !important;
     }
+  }
+
+  &__message-icon {
+    transform: translateX(-1px);
+  }
+
+  &__post-icon {
+    transform: translateX(1px);
   }
 
   &__price {
