@@ -13,7 +13,6 @@
 
   &--fade {
     transition: opacity .55s ease, transform .75s ease;
-    transition-delay: .25s;
     opacity: 1;
     transform: translateZ(0);
 
