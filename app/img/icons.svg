@@ -38,9 +38,9 @@
     <path d="M15 28.754c7.732 0 14-6.26 14-13.983C29 7.048 22.732.788 15 .788S1 7.048 1 14.77c0 7.722 6.268 13.983 14 13.983zM1 14.77h28" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M15 .788a21.38 21.38 0 0 1 5.6 13.983A21.38 21.38 0 0 1 15 28.754 21.38 21.38 0 0 1 9.4 14.77 21.38 21.38 0 0 1 15 .788z" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-  <symbol viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="google-play">
-    <path d="M29 1L16.91 13.09l-6.364-6.363L1 16.273" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M21.364 1H29v7.636" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <symbol viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg" id="google-play">
+    <path d="M.688.362c-.022 0-.045 0-.067.003a.632.632 0 0 0-.44.225.772.772 0 0 0-.181.5v33.498c0 .13.03.256.089.368a.696.696 0 0 0 .245.269.607.607 0 0 0 .664-.012l2.55-1.71a.65.65 0 0 0 .143-.096l22.276-14.942a.7.7 0 0 0 .234-.266.791.791 0 0 0 0-.718.7.7 0 0 0-.234-.265L3.7 2.282a.664.664 0 0 0-.013-.009.65.65 0 0 0-.154-.105L.998.467a.612.612 0 0 0-.31-.105zm.626 2.02l1.54 1.032 10.713 14.43-10.7 14.411-1.553 1.041V2.381zm4.93 3.308l10.912 7.319-2.74 3.69-8.171-11.01zm12.049 8.081l6.06 4.068-6.066 4.07-3.018-4.065 3.024-4.073zm-3.876 5.22l2.733 3.68L6.26 29.98l8.157-10.988z"
+      fill="#fff"></path>
   </symbol>
   <symbol viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg" id="graph">
     <path d="M29 1L16.91 13.09l-6.364-6.363L1 16.273" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
