@@ -1,5 +1,8 @@
 .section {
+  height: 100vh;
   padding: 100px 0;
+  display: flex;
+  align-items: center;
 
   &--large-padding {
     padding: 200px 0;

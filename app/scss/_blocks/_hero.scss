@@ -1,5 +1,7 @@
 .hero {
-
+  height: 100vh;
+  display: flex;
+  align-items: center;
   &__left {
     height: 100%;
     background-image: url('../img/hero.png');
