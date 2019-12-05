@@ -1,5 +1,9 @@
 .section {
-  padding: 200px 0;
+  padding: 100px 0;
+
+  &--large-padding {
+    padding: 200px 0;
+  }
 
   &--gray {
     background-color: $light-gray;

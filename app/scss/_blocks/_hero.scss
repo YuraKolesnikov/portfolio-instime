@@ -1,15 +1,4 @@
 .hero {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1s ease, transform .5s ease;
-  padding-top: 60px;
-
-  &.hidden {
-    transition: opacity .35s ease, transform .55s ease;
-    transform: translateY(100px);
-    position: relative;
-    opacity: 0;
-  }
 
   &__left {
     height: 100%;
@@ -74,7 +63,7 @@
 
 @media (max-width: 768px) {
   .hero__right {
-    margin: 60px auto;
+    margin: 120px auto 60px;
   }
   .hero__buttons {
     flex-flow: column;

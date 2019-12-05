@@ -7,19 +7,7 @@ $(function() {
   })
 
   /* Intersection observer */
-  var hero = document.querySelector('.hero')
-  var likesSection = document.querySelector('.likes').querySelector('.container')
-  var earningsSection = document.querySelector('.earnings > .container')
-  var profitsSection = document.querySelector('.profits > .container')
-  var featuresSection = document.querySelector('.features > .container')
-  var iphone = document.querySelector('.iphone-img')
-  var metricsSection = document.querySelector('.metrics > .container')
-  var benefitsSection = document.querySelector('.benefits > .container')
-  var navbarBrand = document.querySelector('.navbar__brand')
-  var navbarLinks = Array.from(document.querySelectorAll('.navbar__item'))
-
-  var pricingSection = document.querySelector('.pricing')
-
+  var intersectionEntries = Array.from($('.js-intersection-animate'))
 
   var options = {
     threshold: 0.5
@@ -34,35 +22,13 @@ $(function() {
   }, options)
 
   if (viewport > 768) {
-    observer.observe(hero)
-    observer.observe(navbarBrand)
-    observer.observe(likesSection)
-    observer.observe(earningsSection)
-    observer.observe(profitsSection)
-    observer.observe(featuresSection)
-    observer.observe(metricsSection)
-    observer.observe(benefitsSection)
-    observer.observe(iphone)
-
-    navbarLinks.forEach(function(link) {
-      observer.observe(link)
+    intersectionEntries.forEach(function(entry) {
+      observer.observe(entry)
     })
-    observer.observe(pricingSection)
   } else {
-      hero.classList.remove('hidden')
-      navbarBrand.classList.remove('hidden')
-      likesSection.classList.remove('hidden')
-      earningsSection.classList.remove('hidden')
-      profitsSection.classList.remove('hidden')
-      featuresSection.classList.remove('hidden')
-      metricsSection.classList.remove('hidden')
-      benefitsSection.classList.remove('hidden')
-      iphone.classList.remove('hidden')
-      pricingSection.classList.remove('hidden')
-      
-      navbarLinks.forEach(function(link) {
-        link.classList.remove('hidden')
-      })
+    intersectionEntries.forEach(function(entry) {
+      entry.classList.remove('hidden')
+    })
   }
 
   /* Nav links */

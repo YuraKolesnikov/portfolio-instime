@@ -1,0 +1,25 @@
+/* Styles for intersection observer */
+.intersection-animate {
+
+  &--scale {
+    transition: opacity .55s ease, transform .75s ease;
+    transform: scale(1);
+
+    &.hidden {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+
+  &--fade {
+    transition: opacity .55s ease, transform .75s ease;
+    transition-delay: .25s;
+    opacity: 1;
+    transform: translateZ(0);
+
+    &.hidden {
+      opacity: 0;
+      transform: translate3d(0, 100px, 0);
+    }
+  }
+}

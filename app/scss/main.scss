@@ -15,6 +15,7 @@
 @import "_blocks/footer";
 @import "_blocks/hamburger";
 @import "_blocks/hero";
+@import "_blocks/hidden";
 @import "_blocks/img";
 @import "_blocks/income-graph";
 @import "_blocks/like-card";
@@ -57,14 +58,4 @@
 .profits {
   background-color: $light-gray;
   overflow: hidden;
-}
-
-.iphone-img {
-  transition: opacity .75s ease, transform .75s ease;
-  transition-delay: .2s;
-
-  &.hidden {
-    opacity: 0;
-    transform: scale(0);
-  }
 }

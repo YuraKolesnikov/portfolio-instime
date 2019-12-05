@@ -7,3 +7,7 @@
   opacity: 1;
   transition: transform .55s ease, opacity .35s ease;
 }
+
+@media (max-width: 768px) {
+  .section-title { line-height: 30px; }
+}

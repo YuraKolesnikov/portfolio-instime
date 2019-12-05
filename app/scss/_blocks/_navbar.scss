@@ -23,14 +23,6 @@
     font-size: 18px;
     line-height: 21px;
     color: $black;
-    opacity: 1;
-    transform: translateY(0);
-    transition: transform .55s ease, opacity .25s ease;
-
-    &.hidden {
-      transform: translateY(150px);
-      opacity: 0;
-    }
   }
 
   &__icon {
@@ -101,11 +93,6 @@
     }
     &:nth-child(1) {
       transition-delay: 0;
-    }
-
-    &.hidden {
-      opacity: 0;
-      transform: translateY(100px);
     }
   }
 

@@ -14,11 +14,6 @@
   & .container {
     transition: opacity .75s ease, transform .75s ease;
     transition-delay: .2s;
-
-    &.hidden {
-      opacity: 0;
-      transform: translateY(150px);
-    }
   }
 }
 
